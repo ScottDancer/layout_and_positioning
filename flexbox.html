@@ -21,20 +21,30 @@
       }
 
       .item1 {
+        /* using just the flex property, you can define the grow shrink and basis all in one line of code (in that order) */
+        /* flex: 1 0 auto; */
+        /* it could be good practice to define each change on it's own, so you can control the default */
+        flex-grow: 1;
+        align-self: flex-start;
         min-height: 50px;
         /* flex-shrink 1 is the default, which allows items to shrink so they fit on the page */
         /* with flex-shrink set to zero, the item will not shrink, if set to 2 it will shrink twice as fast */
         flex-shrink: 0;
+        /* learned the order property, but it's best practice not to use it as the html will still be the same, ie: with a screen reader, but it is a cool property in the right situation */
+        /* order: 3; */
       }
 
       .item2 {
         min-height: 100px;
+        align-self: center;
+        /* order: 1; */
         
       }
 
       .item3 {
         min-height: 150px;
-   
+        /* order: 2; */
+
       }
     </style>
   </head>
