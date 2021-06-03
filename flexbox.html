@@ -14,7 +14,15 @@
         margin: 10px;
       }
 
-      .container {
+      .container1 {
+        display: inline-flex;
+        /* display: flex; */
+        background-color: hsl(124, 78.7%, 80.2%);
+        border: 2px solid #2f3d34;
+      }
+
+      .container2 {
+        /* display: inline-flex; */
         display: flex;
         background-color: hsl(124, 78.7%, 80.2%);
         border: 2px solid #2f3d34;
@@ -37,22 +45,41 @@
       .item2 {
         min-height: 100px;
         align-self: center;
-        /* order: 1; */
-        
+        /* order: 1; */  
       }
 
       .item3 {
         min-height: 150px;
         /* order: 2; */
+      }
 
+      .span1 {
+        color: #1ce429;
+        font-size: 50px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .span2 {
+        color: #1ce429;
+        font-size: 50px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container1">
       <div class="item item1">1</div>
       <div class="item item2">2</div>
       <div class="item item3">3</div>
     </div>
+    <span class="span1">This is a Span</span>
+    <div class="container2">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+    </div>
+    <span class="span2">This is a Span</span>
   </body>
 </html>
