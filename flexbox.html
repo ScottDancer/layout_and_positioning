@@ -9,7 +9,7 @@
       .item {
         border: 2px solid #2f3d34;
         background-color: #638a70;
-        width: 75px;
+        width: 200px;
         color: #1ce429;
         margin: 10px;
       }
@@ -22,19 +22,19 @@
 
       .item1 {
         min-height: 50px;
+        /* flex-shrink 1 is the default, which allows items to shrink so they fit on the page */
+        /* with flex-shrink set to zero, the item will not shrink, if set to 2 it will shrink twice as fast */
+        flex-shrink: 0;
       }
 
       .item2 {
         min-height: 100px;
-        flex-grow: 2;
-        /* flex-basis set at 0 assumes it is starting at 0 when it divides the rest of the space rather than add on the width of 75px in the original item class */
-        flex-basis: 0;
+        
       }
 
       .item3 {
         min-height: 150px;
-        flex-grow: 1;
-        flex-basis: 0;
+   
       }
     </style>
   </head>
